@@ -3,6 +3,7 @@ import apiClient from "../services/api-client";
 import { CanceledError } from "axios";
 
 
+
 interface FetchResponse <L>{
     count:number;
     results: L[];
@@ -28,3 +29,5 @@ const useGenres = <T> (endpoint: string)=>{
     return {data, error}
 }
 export default useGenres;
+
+
